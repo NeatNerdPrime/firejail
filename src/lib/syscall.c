@@ -930,6 +930,9 @@ static const SyscallGroupList sysgroups[] = {
 #ifdef SYS_chroot
 	  "chroot,"
 #endif
+#ifdef SYS_fchroot
+	  "fchroot,"
+#endif
 #ifdef SYS_fsconfig
 	  "fsconfig,"
 #endif
@@ -1466,6 +1469,9 @@ static const SyscallGroupList sysgroups[] = {
 #endif
 #ifdef SYS_fanotify_init
 	  "fanotify_init,"
+#endif
+#ifdef SYS_fchroot
+	  "fchroot,"
 #endif
 #ifdef SYS_mount
 	  "mount,"
