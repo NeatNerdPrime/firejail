@@ -68,7 +68,7 @@ keep-dev-ntsync
 
 #apparmor
 caps.drop all
-ipc-namespace
+#ipc-namespace
 #net none
 netfilter
 nodvd

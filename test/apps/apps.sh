@@ -48,7 +48,7 @@ done
 
 # browsers
 echo "TESTING: browsers ***************************************"
-browsers=(firefox brave chromium vivaldi)
+browsers=(firefox brave chromium vivaldi tor)
 for app in "${browsers[@]}"; do
     sudo true
     echo "TESTING: $app (test/apps/$app.exp)"
@@ -59,7 +59,7 @@ done
 # multimedia apps
 echo "TESTING: multimedia apps ************************************"
 multimedia=(vlc mpv rhythmbox totem showtime audacious smplayer mplayer \
-	   cmus strawberry amarok quodlibet qmmp)
+	   cmus strawberry amarok quodlibet qmmp shortwave)
 for app in "${multimedia[@]}"; do
     sudo true
     echo "TESTING: $app (test/apps/$app.exp)"
@@ -68,7 +68,7 @@ for app in "${multimedia[@]}"; do
 done
 
 echo "TESTING: games ************************************"
-games=(warzone2100 dosbox)
+games=(warzone2100 dosbox lutris)
 for app in "${games[@]}"; do
     sudo true
     echo "TESTING: $app (test/apps/$app.exp)"
